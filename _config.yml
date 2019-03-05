@@ -10,12 +10,12 @@ gitment:
   client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
   client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
 gitalk:
-  enable: false ## If you want to use Gitment comment system please set the value to true.
-  owner:  ## Your GitHub ID, e.g. username
-  repo:  ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
-  client_id:  ## GitHub client ID, e.g. 75752dafe7907a897619
-  client_secret:  ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
-  admin:  ## Github repo owner and collaborators, only these guys can initialize github issues.
+  enable: true ## If you want to use Gitment comment system please set the value to true.
+  owner: HScarb ## Your GitHub ID, e.g. username
+  repo: Blog ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
+  client_id: f15f3873bab8b7913d20 ## GitHub client ID, e.g. 75752dafe7907a897619
+  client_secret: c50753c0240997659e4cbac9432237b3f16a1271 ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+  admin: [HScarb] ## Github repo owner and collaborators, only these guys can initialize github issues.
 valine: ## https://valine.js.org
   enable: false ## If you want to use Valine comment system, please set the value to true.
   appid: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
@@ -67,11 +67,11 @@ menu:
   - page: archive
     directory: archives/
     icon: fa-archive
-  - page: about
-    directory: about/
+  - page: experience
+    directory: categories/exp/
     icon: fa-user
-  - page: rss
-    directory: atom.xml
+  - page: note
+    directory: categories/note/
     icon: fa-rss
 
 widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
@@ -80,7 +80,7 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - tag
   - recent_posts
   - recent_comments
-  - links
+  # - links
 
 links:
   - title: site-name1
